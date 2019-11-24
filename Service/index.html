@@ -12,6 +12,7 @@
 
 </head>
 <body>
+<div class="overlay-layer"></div>
 <header>
     <div class="container">
         <div class="header-walp clearfix">
@@ -117,7 +118,7 @@
                         <li class="item-product"
                             data-type-img-url="/bitrix/templates/asmart/images/type-2.jpg"
                             data-url="/shop/bitovaya-tehnika/ustanovka-i-podklyuchenie-stiralnoy-mashiny"
-                            data-block-name="Áûòîâàÿ òåõíèêà" data-block-id="26" data-item-id="793432">
+                            data-block-name="Установка и подключение стиральной машины" data-block-id="26" data-item-id="793432">
                             <form action="#" method="post"
                                   enctype="multipart/form-data" class="add_form">
                                 <div class="overlay-img">
@@ -143,7 +144,7 @@
                         <li class="item-product"
                             data-type-img-url="/bitrix/templates/asmart/images/type-2.jpg"
                             data-url="/shop/bitovaya-tehnika/ustanovka-i-podklyuchenie-posudomoechnoy-mashiny"
-                            data-block-name="Áûòîâàÿ òåõíèêà" data-block-id="26" data-item-id="793433">
+                            data-block-name="Установка и подключение стиральной машины" data-block-id="26" data-item-id="793433">
                             <form action="#" method="post"
                                   enctype="multipart/form-data" class="add_form">
                                 <div class="overlay-img">
@@ -169,7 +170,7 @@
                         <li class="item-product"
                             data-type-img-url="/bitrix/templates/asmart/images/type-2.jpg"
                             data-url="/shop/bitovaya-tehnika/ustanovka-vodonagrevatelya-protochnogo"
-                            data-block-name="Áûòîâàÿ òåõíèêà" data-block-id="26" data-item-id="793434">
+                            data-block-name="Установка и подключение стиральной машины" data-block-id="26" data-item-id="793434">
                             <form action="#" method="post"
                                   enctype="multipart/form-data" class="add_form">
                                 <div class="overlay-img">
@@ -194,7 +195,7 @@
                         <li class="item-product"
                             data-type-img-url="/bitrix/templates/asmart/images/type-2.jpg"
                             data-url="/shop/bitovaya-tehnika/ustanovka-vodonagrevatelya-nakopitelnogo"
-                            data-block-name="Áûòîâàÿ òåõíèêà" data-block-id="26" data-item-id="793435">
+                            data-block-name="Установка и подключение стиральной машины" data-block-id="26" data-item-id="793435">
                             <form action="#" method="post"
                                   enctype="multipart/form-data" class="add_form">
                                 <div class="overlay-img">
@@ -224,9 +225,9 @@
 
         </div>
         <div class="aside">
-            <div class="title-basket">Êîðçèíà</div>
+            <div class="title-basket">Корзина</div>
             <div class="content-aside-walp">
-                <div class="empty-basket">Âàøà êîðçèíà ïóñòà</div>
+                <div class="empty-basket">Ваша корзина пуста</div>
                 <div class="status-basket"></div>
                 <div class="content-basket"></div>
             </div>
@@ -235,46 +236,47 @@
                 <div class="back-button clearfix">
                     <i class="fas fa-angle-down"></i>
                 </div>
-                <span class="order-link-text">Îôîðìèòü çàêàç</span>
+                <span class="order-link-text">Оформить заказ</span>
                 <div class="overlay-form">
-                    <form id="order_form" action="https://www.uk.green-garden.ru/shop/" method="post"
-                          enctype="multipart/form-data" class="order-form ">
+                    <form id="order_form" action="#" method="post" enctype="multipart/form-data"
+                          class="order-form ">
                         <div class="form-group">
-                            <input type="text" name="name-order" placeholder="Èìÿ*" required="">
+                            <input type="text" name="name-order" placeholder="Имя*" required>
                             <input type="email" name="email-order" placeholder="E-mail">
-                            <input class="phone" type="text" name="phone-order" placeholder="Òåëåôîí*" required="">
+                            <input class="phone" type="text" name="phone-order" placeholder="Телефон*" required>
                             <select class="select-box2" name="zhk-order">
-                                <option value="Ïî óìîë÷àíèþ">Âûáåðèòå âàø ÆÊ</option>
-                                <option value="Ýëèòíûé êîìïëåêñ «Green Park Ñîëîò÷à»">
-                                    Ýëèòíûé êîìïëåêñ «Green Park Ñîëîò÷à»
+
+                                <option value="По умолчанию">Выберите ваш ЖК</option>
+                                <option value="Элитный комплекс «Green Park Солотча»">
+                                    Элитный комплекс «Green Park Солотча»
                                 </option>
-                                <option value="ÆÊ «Grand Comfort»">
-                                    ÆÊ «Grand Comfort»
+                                <option value="ЖК «Grand Comfort»">
+                                    ЖК «Grand Comfort»
                                 </option>
-                                <option value="ÆÊ «Åâðîñèòè»">
-                                    ÆÊ «Åâðîñèòè»
+                                <option value="ЖК «Евросити»">
+                                    ЖК «Евросити»
                                 </option>
-                                <option value="ÆÊ «Èçóìðóäíàÿ ïîëÿíà»">
-                                    ÆÊ «Èçóìðóäíàÿ ïîëÿíà»
+                                <option value="ЖК «Изумрудная поляна»">
+                                    ЖК «Изумрудная поляна»
                                 </option>
-                                <option value="ÆÊ «Åâðîêîìôîðò 2»">
-                                    ÆÊ «Åâðîêîìôîðò 2»
+                                <option value="ЖК «Еврокомфорт 2»">
+                                    ЖК «Еврокомфорт 2»
                                 </option>
-                                <option value="ÆÊ «Åâðîêîìôîðò»">
-                                    ÆÊ «Åâðîêîìôîðò»
+                                <option value="ЖК «Еврокомфорт»">
+                                    ЖК «Еврокомфорт»
                                 </option>
-                                <option value="ÆÊ «Ïðåìüåð»">
-                                    ÆÊ «Ïðåìüåð»
+                                <option value="ЖК «Премьер»">
+                                    ЖК «Премьер»
                                 </option>
 
 
                             </select>
-                            <input type="text" name="adress-order" placeholder="Àäðåñ*" required="">
-                            <textarea name="text-order" placeholder="Êîììåíòàðèé"></textarea>
+                            <input type="text" name="adress-order" placeholder="Адрес*" required>
+                            <textarea name="text-order" placeholder="Комментарий"></textarea>
                         </div>
-                        <div class="last-field-order-form">* - ïîëÿ, îáÿçàòåëüíûå äëÿ çàïîëíåíèÿ</div>
+                        <div class="last-field-order-form">* - поля, обязательные для заполнения</div>
                         <div class="spiner-order onclic"></div>
-                        <input type="submit" class="submit-order-form " value="Îòïðàâèòü">
+                        <input type="submit" class="submit-order-form " value="Отправить"/>
 
 
                     </form>
@@ -316,6 +318,8 @@
 <link href="css/owl.theme.default.min.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.inputmask.js"></script>
+<script type="text/javascript" src="js/js.cookie.js"></script>
 <script type="text/javascript" src="js/default_js.js"></script>
 
 </body>

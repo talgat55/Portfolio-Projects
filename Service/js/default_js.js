@@ -38,6 +38,10 @@ $(document).ready(function () {
     }
 
 //---------------------------
+//  Phone Mask in Order
+// ---------------------------
+    jQuery('input[name=phone-order]').inputmask({"mask": "+7 (999) 999-9999"});
+//---------------------------
 //  Check Products  Cookie
 // ---------------------------
 
@@ -48,7 +52,7 @@ $(document).ready(function () {
         // var arrayproducts = valuecookies.split(",");
 
 
- 
+
         //
         /*localStorage.removeItem('itemprice-'+$valitemid);
         localStorage.removeItem('itemimg-'+$valitemid);
@@ -60,16 +64,16 @@ $(document).ready(function () {
         */
         // work with local storage for page without items products
         if ($('.item-product').length == 0) {
-            
-                
+
+
             for (var i = 0; i < localStorage.length; i++) {
-                var valuecurrent =  JSON.stringify(localStorage.getItem(localStorage.key(i))); 
+                var valuecurrent =  JSON.stringify(localStorage.getItem(localStorage.key(i)));
                 var returnObj = JSON.parse(valuecurrent);
 
                 if (returnObj  &&  Number.isInteger(parseInt(localStorage.key(i))) ) {
 
                     // show button order
-              
+
                     $('.oreder-link').fadeIn(300);
 
                     if (parseInt($('.header-cart .count-cart').html()) == '0') {
@@ -101,12 +105,12 @@ $(document).ready(function () {
 
 
                         countitem = 1;
-                        redystatus = '1 ����� �� ����� ' + $price_product + ' <i class="fas fa-ruble-sign"></i>';
+                        redystatus = '1 Товар на сумму ' + $price_product + ' <i class="fas fa-ruble-sign"></i>';
 
                     } else {
 
                         countitem = parseInt($lengthitems + 1);
-                        redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">������</div> �� ����� <span></span> <i class="fas fa-ruble-sign"></i>';
+                        redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">Товара</div> на сумму <span></span> <i class="fas fa-ruble-sign"></i>';
 
                     }
 
@@ -145,29 +149,29 @@ $(document).ready(function () {
                     if(detailid ==$id ){
 
                         $('.block-price-order').html(' ').append('<div class="container">\n' +
-                            '                <a href="#" class="link-to-basket-in-item link-to-basket-show">������� � �������</a><div class="block-price-order-walp  remove-item"  data-id="' + detailid + '">\n' +
+                            '                <a href="#" class="link-to-basket-in-item link-to-basket-show">Перейти в корзину</a><div class="block-price-order-walp  remove-item"  data-id="' + detailid + '">\n' +
                             '                    <div class="price-value-detail">\n' +
                             '                        <span>' + detailprice + '</span><i class="fas fa-ruble-sign"></i>\n' +
                             '                    </div>\n' +
-                            '                    <a href="#" class="addtocard  remove-item">�������</a>\n' +
+                            '                    <a href="#" class="addtocard  remove-item">Удалить</a>\n' +
                             '                </div>\n' +
                             '            </div>');
 
                     }
                 }
             }
-     
 
 
-        } 
+
+        }
 
         $('.item-product').each(function (i, v) {
 
 
             if (valuecookies.indexOf($(v).data('item-id')) > -1) {
-            // show button order
-      
-           $('.oreder-link').fadeIn(300);
+                // show button order
+
+                $('.oreder-link').fadeIn(300);
 
                 var $this = $(v);
 
@@ -191,7 +195,7 @@ $(document).ready(function () {
                 // replcae label order
                 var $thisbutton = $($this).find('input.addtocard');
                 $this.find('.link-to-basket-in-item').addClass(' link-to-basket-show');
-                $thisbutton.val('�������');
+                $thisbutton.val('Удалить');
                 $thisbutton.addClass(' remove-item');
 
                 $($this).find('.overlay-img-layer').fadeIn(400);
@@ -200,12 +204,12 @@ $(document).ready(function () {
 
                 if ($lengthitems == '0') {
                     countitem = 1;
-                    redystatus = '1 ����� �� ����� ' + $price_product + ' <i class="fas fa-ruble-sign"></i>';
+                    redystatus = '1 Товар на сумму ' + $price_product + ' <i class="fas fa-ruble-sign"></i>';
 
                 } else {
 
                     countitem = parseInt($lengthitems + 1);
-                    redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">������</div> �� ����� <span></span> <i class="fas fa-ruble-sign"></i>';
+                    redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">Товара</div> на сумму <span></span> <i class="fas fa-ruble-sign"></i>';
 
                 }
 
@@ -308,7 +312,7 @@ $(document).ready(function () {
         // replcae label order
         var $thisbutton = $(this).find('input.addtocard');
         $(this).find('.link-to-basket-in-item').addClass(' link-to-basket-show');
-        $thisbutton.val('�������');
+        $thisbutton.val('Удалить');
         $thisbutton.addClass(' remove-item');
 
         $(this).find('.overlay-img-layer').fadeIn(400);
@@ -317,12 +321,12 @@ $(document).ready(function () {
 
         if ($lengthitems == '0') {
             countitem = 1;
-            redystatus = '1 ����� �� ����� ' + $price_product + ' <i class="fas fa-ruble-sign"></i>';
+            redystatus = '1 Товар на сумму ' + $price_product + ' <i class="fas fa-ruble-sign"></i>';
 
         } else {
 
             countitem = parseInt($lengthitems + 1);
-            redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">������</div> �� ����� <span></span> <i class="fas fa-ruble-sign"></i>';
+            redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">Товара</div> на сумму <span></span> <i class="fas fa-ruble-sign"></i>';
 
         }
 
@@ -429,7 +433,7 @@ $(document).ready(function () {
             });
         });
 
-        // var $arr = {'PRODUCT_ID': '1811', 'NAME' : '����� 1', 'PRICE': '500', 'CURRENCY' : 'RUB', 'QUANTITY': '5'};
+        // var $arr = {'PRODUCT_ID': '1811', 'NAME' : 'Товар 1', 'PRICE': '500', 'CURRENCY' : 'RUB', 'QUANTITY': '5'};
 
         var objTest = {
             nameorder: $nameOrder,
@@ -448,7 +452,7 @@ $(document).ready(function () {
         $.post("/bitrix/templates/asmart/ajax/addtoorder.php", objTest, function (res) {
 
             console.log(res);
-            if (res == '��� ����� ��������') {
+            if (res == 'Ваш заказ оформлен') {
                 /* $('.oreder-link')
                      .hide()
                      .removeClass('full-button')
@@ -462,8 +466,8 @@ $(document).ready(function () {
                 $('.status-basket').html(' ');
                 $('.content-basket')
                     .html(' ')
-                    .html('<div class="succes-send-order"><h3>�������!</h3>\n' +
-                        '���� ��������� �������� � ���� � ��������� �����.</div>');
+                    .html('<div class="succes-send-order"><h3>Спасибо!</h3>\n' +
+                        'Наши менеджеры свяжутся с вами в ближайшее время.</div>');
                 // clean basket in header
                 $('.header-cart .count-cart').html('0');
                 $('.status-basket').html('');
@@ -474,7 +478,7 @@ $(document).ready(function () {
                 // clean in products
                 $('.overlay-img-layer').fadeOut(400);
                 $(this).find('.link-to-basket-in-item').removeClass('link-to-basket-show');
-                $('.addtocard').removeClass('remove-item').val('��������');
+                $('.addtocard').removeClass('remove-item').val('Заказать');
 
                 // remove text
                 setTimeout(function () {
@@ -523,7 +527,7 @@ $(document).ready(function () {
             if (parseInt($basketCountValue) == '2') {  // if in status block 2 count item  change last letter
 
                 var $changesWord = $('.status-basket .basket-name-changes').html();
-                res = $changesWord.replace("������", "�����");
+                res = $changesWord.replace("Товара", "Товар");
                 $('.status-basket .basket-name-changes')
                     .html('')
                     .html(res)
@@ -542,7 +546,7 @@ $(document).ready(function () {
 
         }
 
-        // hide blocks '����� � ������� � ����� �������' in page products
+        // hide blocks 'товар в корзине и текст удалить' in page products
         var $itemid = $thisParent.data('id');
 
         // delete id from cookie
@@ -575,7 +579,7 @@ $(document).ready(function () {
                 '                    <div class="price-value-detail">\n' +
                 '                        <span>' + priceVlaue + '</span><i class="fas fa-ruble-sign"></i>\n' +
                 '                    </div>\n' +
-                '                    <a href="#" class="addtocard  ">��������</a>\n' +
+                '                    <a href="#" class="addtocard  ">Заказать</a>\n' +
                 '                </div>\n' +
                 '            </div>');
 
@@ -588,7 +592,7 @@ $(document).ready(function () {
 
                 $(v).find('.overlay-img-layer').fadeOut(400);
                 $(v).find('.link-to-basket-in-item').removeClass(' link-to-basket-show');
-                $(v).find('.addtocard').removeClass('remove-item').val('��������');
+                $(v).find('.addtocard').removeClass('remove-item').val('Заказать');
 
             }
         });
@@ -618,7 +622,7 @@ $(document).ready(function () {
                 if ($(v).data('item-id') == $valitemid) {
                     $(v).find('.overlay-img-layer').fadeOut(400);
                     $(v).find('.link-to-basket-in-item').removeClass('link-to-basket-show');
-                    $(v).find('.addtocard').removeClass('remove-item').val('��������');
+                    $(v).find('.addtocard').removeClass('remove-item').val('Заказать');
 
 
                 }
@@ -629,7 +633,7 @@ $(document).ready(function () {
 
             $thisitemid.find('.overlay-img-layer').fadeOut(400);
             $(this).parent().find('.link-to-basket-in-item').removeClass('link-to-basket-show');
-            $(this).removeClass('remove-item').val('��������'); // remove class and chabge text value
+            $(this).removeClass('remove-item').val('Заказать'); // remove class and chabge text value
 
 
         }
@@ -686,7 +690,7 @@ $(document).ready(function () {
         if (parseInt($basketCountValue) == '2') {  // if in status block 2 count item  change last letter
 
             var $changesWord = $('.status-basket .basket-name-changes').html();
-            res = $changesWord.replace("������", "�����");
+            res = $changesWord.replace("Товара", "Товар");
             $('.status-basket .basket-name-changes')
                 .html('')
                 .html(res)
@@ -778,11 +782,11 @@ $(document).ready(function () {
                     if (valuecookies.indexOf($itemid) > -1) {
 
                         $('.block-price-order').append('<div class="container">\n' +
-                            '                   <a href="#" class="link-to-basket-in-item link-to-basket-show">������� � �������</a> <div class="block-price-order-walp remove-item">\n' +
+                            '                   <a href="#" class="link-to-basket-in-item link-to-basket-show">Перейти в корзину</a> <div class="block-price-order-walp remove-item">\n' +
                             '                        <div class="price-value-modal" data-id="' + $itemid + '">\n' +
                             '                            <span>' + priceValue + '</span><i class="fas fa-ruble-sign"></i>\n' +
                             '                        </div>\n' +
-                            '                        <a href="#" class="addtocard remove-item">�������</a>\n' +
+                            '                        <a href="#" class="addtocard remove-item">Удалить</a>\n' +
                             '                    </div>\n' +
                             '                </div>');
                     } else {
@@ -792,7 +796,7 @@ $(document).ready(function () {
                             '                        <div class="price-value-modal" data-id="' + $itemid + '">\n' +
                             '                            <span>' + priceValue + '</span><i class="fas fa-ruble-sign"></i>\n' +
                             '                        </div>\n' +
-                            '                        <a href="#" class="addtocard">��������</a>\n' +
+                            '                        <a href="#" class="addtocard">Заказать</a>\n' +
                             '                    </div>\n' +
                             '                </div>');
                     }
@@ -802,7 +806,7 @@ $(document).ready(function () {
                         '                        <div class="price-value-modal" data-id="' + $itemid + '">\n' +
                         '                            <span>' + priceValue + '</span><i class="fas fa-ruble-sign"></i>\n' +
                         '                        </div>\n' +
-                        '                        <a href="#" class="addtocard">��������</a>\n' +
+                        '                        <a href="#" class="addtocard">Заказать</a>\n' +
                         '                    </div>\n' +
                         '                </div>');
                 }
@@ -875,7 +879,7 @@ $(document).ready(function () {
 
 
         if ($('.block-price-order-walp').is('.remove-item')) {
-            $('.block-price-order-walp .addtocard').removeClass('remove-item').html(' ').html('��������');
+            $('.block-price-order-walp .addtocard').removeClass('remove-item').html(' ').html('Заказать');
             $('.block-price-order-walp').removeClass('remove-item');
 
             $(this).parent().parent().find('.link-to-basket-in-item').removeClass('link-to-basket-show');
@@ -948,7 +952,7 @@ $(document).ready(function () {
 
             if ($(v).data('item-id') == $id) {
                 $(v).find('.link-to-basket-in-item').addClass(' link-to-basket-show');
-                $(v).find('.addtocard').val('�������').addClass(' remove-item');
+                $(v).find('.addtocard').val('Удалить').addClass(' remove-item');
 
                 $(v).find('.overlay-img-layer').fadeIn(400);
 
@@ -956,10 +960,10 @@ $(document).ready(function () {
         });
 
         // for button add in modal form item
-        $(this).html('�������');
+        $(this).html('Удалить');
         $(this).addClass(' remove-item');
         $(this).parent().addClass(' remove-item');
-        $(this).parent().parent().append('<a href="#" class="link-to-basket-in-item">������� � �������</a>');
+        $(this).parent().parent().append('<a href="#" class="link-to-basket-in-item">Перейти в корзину</a>');
         $(this).parent().parent().find('.link-to-basket-in-item').addClass(' link-to-basket-show');
 
 
@@ -967,12 +971,12 @@ $(document).ready(function () {
 
         if ($lengthitems == '0') {
             countitem = 1;
-            redystatus = '1 ����� �� ����� ' + parseInt($price_product) + ' <i class="fas fa-ruble-sign"></i>';
+            redystatus = '1 Товар на сумму ' + parseInt($price_product) + ' <i class="fas fa-ruble-sign"></i>';
 
         } else {
 
             countitem = parseInt($lengthitems + 1);
-            redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">������</div> �� ����� <span></span> <i class="fas fa-ruble-sign"></i>';
+            redystatus = '<div class="count-item-value">' + countitem + '</div> <div class="basket-name-changes">Товара</div> на сумму <span></span> <i class="fas fa-ruble-sign"></i>';
 
         }
 

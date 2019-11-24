@@ -1528,7 +1528,7 @@ footer {
     .bx-btn-red { display:none; }
     .bx-btn-border { display:none; }
     .bx-composite-btn-fixed { display:none; }
-@media (mx-width: 767px){	
+@media (max-width: 767px){
 	.col-xs-6{
 		width: 50%;
 		padding: 0 15px;
