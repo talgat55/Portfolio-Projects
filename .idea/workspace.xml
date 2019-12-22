@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f70e804-3bca-41d6-a9aa-b73920eb8b8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Burger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Burger/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Burger/catalog/view/theme/asmart/static/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/Burger/catalog/view/theme/asmart/static/sass/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Burger/catalog/view/theme/asmart/template/common/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/Burger/catalog/view/theme/asmart/template/common/footer.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Service/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            <state relative-caret-position="23">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Burger/catalog/view/theme/asmart/static/sass/style.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="1073" column="28" selection-start-line="1073" selection-start-column="28" selection-end-line="1073" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -44,7 +57,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Burger" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,6 +66,7 @@
         <option value="$PROJECT_DIR$/Service/css/template_styles.css" />
         <option value="$PROJECT_DIR$/Service/js/default_js.js" />
         <option value="$PROJECT_DIR$/Service/index.html" />
+        <option value="$PROJECT_DIR$/Burger/catalog/view/theme/asmart/static/sass/style.sass" />
       </list>
     </option>
   </component>
@@ -62,7 +76,7 @@
     <option name="width" value="1617" />
     <option name="height" value="895" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -70,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,13 +95,63 @@
             <path>
               <item name="PortfolioProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="PortfolioProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Restoran" type="462c0819:PsiDirectoryNode" />
+              <item name="Burger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Burger" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Burger" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Burger" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Burger" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="asmart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Burger" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="asmart" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortfolioProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortfolioProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Burger" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="asmart" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,16 +186,20 @@
       <workItem from="1573997400593" duration="6282000" />
       <workItem from="1574607944085" duration="1817000" />
       <workItem from="1574617118585" duration="1822000" />
+      <workItem from="1574738966138" duration="1057000" />
+      <workItem from="1574746271315" duration="2252000" />
+      <workItem from="1577044739964" duration="263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9921000" />
+    <option name="totallyTimeSpent" value="13493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13392363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26286662" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -144,7 +213,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Migrations" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21052632" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21052632" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -172,8 +241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Service/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        <state relative-caret-position="23">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -181,6 +250,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25346">
           <caret line="1102" column="26" selection-start-line="1102" selection-start-column="26" selection-end-line="1102" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Burger/catalog/view/theme/asmart/static/sass/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="1073" column="28" selection-start-line="1073" selection-start-column="28" selection-end-line="1073" selection-end-column="28" />
         </state>
       </provider>
     </entry>
